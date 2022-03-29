@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 var utm_term = params.get('utm_term');
                 var utm_medium = params.get('utm_medium');
                 var adclickid = params.get('msclkid');
-                var uid = 2;
-                var base_url = "https://oldcoffeerecipe.com"; //window.location.origin;
+                var uid = clickkpi_uid;
+                var base_url = window.location.origin;
 
                 var xhr = new XMLHttpRequest();
                 xhr.open("POST", url);
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.addEventListener('click', e => {
             const origin = e.target.closest('a');
             var clicked = getCookie('ckpi_clicked');
-            alert(clicked);
+
             if ( clicked != '1') {
 
                 if (sent_click === false) { //Put here the condition you want
