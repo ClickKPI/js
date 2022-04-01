@@ -98,7 +98,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             };
 
                             var data = JSON.stringify({
-                                "tid": tid
+                                "tid": tid,
+                                    "url": linkurl
                             });
 
                             xhr.send(data);
