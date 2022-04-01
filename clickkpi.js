@@ -42,11 +42,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 };
 
                 var data = JSON.stringify({
-                    "utm_source": utm_source,
-                    "utm_campaign": utm_campaign,
-                    "utm_content": utm_content,
-                    "utm_medium": utm_medium,
-                    "utm_term": utm_term,
+                    "utmsource": utm_source,
+                    "utmcampaign": utm_campaign,
+                    "utmcontent": utm_content,
+                    "utmmedium": utm_medium,
+                    "utmterm": utm_term,
                     "uid": uid,
                     "base_url": base_url,
                     "adclickid": adclickid,
