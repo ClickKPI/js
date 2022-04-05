@@ -19,7 +19,7 @@
                 var utm_medium = params.get('utm_medium');
                 var adclickid = params.get('msclkid');
                 var uid = clickkpi_uid;
-                var base_url = clickkpi_campaign_url;
+                var camp_uid = clickkpi_campaign_uid;
 
                 var xhr = new XMLHttpRequest();
                 xhr.open("POST", url);
@@ -48,7 +48,7 @@
                     "utmmedium": utm_medium,
                     "utmterm": utm_term,
                     "uid": uid,
-                    "base_url": base_url,
+                    "camp_uid": camp_uid,
                     "adclickid": adclickid,
                 });
 
