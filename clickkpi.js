@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 var utm_medium = params.get('utm_medium');
                 var adclickid = params.get('msclkid');
                 var uid = clickkpi_uid;
-                var base_url = clickkpi_campaign_url;
+                var camp_uid = clickkpi_campaign_url;
 
                 var xhr = new XMLHttpRequest();
                 xhr.open("POST", url);
