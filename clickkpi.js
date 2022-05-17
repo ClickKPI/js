@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 "utm_medium": utm_medium,
                 "utm_term": utm_term,
                 "uid": uid,
-                "base_url": base_url,
+                "camp_uid": clickkpi_campaign_uid,
                 "adclickid": adclickid,
             });
 
