@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     for (let i = 0; i < a_tags.length; i++) {
                         let oldUrl = a_tags[i].href; // Get current url
 
-                        if (click_tag = new RegExp(["[clklrd", "clickkpi"].join("|"), "i"), click_tag.test(oldUrl)) {
+                        if (click_tag = new RegExp(["[clklrd]", "clickkpi"].join("|"), "i"), click_tag.test(oldUrl)) {
                             let newUrl = oldUrl.replace("[clklrd]", jsonResponse["clickid"]); // Create new url
                             newUrl = oldUrl.replace("clickkpi", jsonResponse["clickid"]);
                             a_tags[i].href = newUrl;
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             let a_tags = document.getElementsByTagName('a');
             for (let i = 0; i < a_tags.length; i++) {
                 let oldUrl = a_tags[i].href; // Get current url
-                if (click_tag = new RegExp(["[clklrd", "clickkpi"].join("|"), "i"), click_tag.test(oldUrl)) {
+                if (click_tag = new RegExp(["[clklrd]", "clickkpi"].join("|"), "i"), click_tag.test(oldUrl)) {
                     let newUrl = oldUrl.replace("[clklrd]", click_id); // Create new url
                     newUrl = oldUrl.replace("clickkpi", click_id);
                     a_tags[i].href = newUrl;
